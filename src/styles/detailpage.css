@@ -21,12 +21,21 @@
   background-color: #000000;
   color: white;
   border: none;
-  padding: 8px;
-  font-size: 16px;
+  transition: all ease-in-out 0.1s;
+  font-family: "Luckiest Guy", cursive;
+  padding-top: 5px;
+  text-align: center;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
 }
 
 .productInfo button:hover {
   cursor: pointer;
+  background-color: white;
+  color: #000000;
+  outline: solid 3px black;
 }
 
 .productDetail img {

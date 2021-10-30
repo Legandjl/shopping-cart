@@ -10,6 +10,9 @@ import cat9 from "../images/cat9.jpg";
 import cat10 from "../images/cat10.jpg";
 import cat11 from "../images/cat11.jpg";
 import cat12 from "../images/cat12.jpg";
+import cat13 from "../images/cat13.jpg";
+import cat14 from "../images/cat14.jpg";
+import cat15 from "../images/cat15.jpg";
 
 const products = () => {
   const images = [
@@ -25,6 +28,9 @@ const products = () => {
     cat10,
     cat11,
     cat12,
+    cat13,
+    cat14,
+    cat15,
   ];
 
   const prices = [29.99, 39.99, 49.99];

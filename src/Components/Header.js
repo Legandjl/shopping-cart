@@ -12,10 +12,8 @@ const Header = () => {
       <Link to="/store">Store</Link>
       <div className="cartIconWrap">
         <Link to="/cart">
-          <i className="ri-shopping-cart-line">
-            {" "}
-            {cartItems.length > 9 ? 9 + "+" : cartItems.length}
-          </i>
+          <i className="ri-shopping-cart-line"> </i>
+          {cartItems.length > 9 ? 9 + "+" : cartItems.length}
         </Link>
       </div>
     </nav>

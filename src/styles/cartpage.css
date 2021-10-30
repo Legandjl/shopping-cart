@@ -1,0 +1,121 @@
+.cartWrap {
+  display: grid;
+  grid-template-columns: 1fr minmax(700px, 1fr) 1fr;
+  position: relative;
+}
+
+.cartWrap button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  font-size: 16px;
+  transition: all ease-in-out 0.1s;
+  font-family: "Luckiest Guy", cursive;
+  padding-top: 5px;
+  text-align: center;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.cartWrap button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #000000;
+  outline: solid 3px black;
+}
+.cartPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px;
+  padding: 50px;
+  align-items: center;
+  border-right: solid 4px;
+  background-color: #eeeeee;
+  justify-content: center;
+  justify-items: center;
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1;
+  grid-gap: 10px;
+  justify-self: center;
+}
+
+.cartItem img {
+  width: 200px;
+  height: 200px;
+  outline: 10px solid;
+  border-radius: 12px;
+  margin: 10px;
+  justify-self: center;
+}
+
+.cartItem i {
+  align-self: center;
+  cursor: pointer;
+}
+
+.productQuantity {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 5px;
+  margin-bottom: 20px;
+}
+
+.productQuantity p {
+  margin-top: 5px;
+}
+
+.emptyCart {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 20px;
+}
+
+.emptyCart img {
+  width: 200px;
+  height: auto;
+  justify-self: center;
+}
+
+.checkOut {
+  display: grid;
+  grid-column: 2;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  top: 30vh;
+  left: 50vw;
+  height: 300px;
+  width: 300px;
+  border: solid 8px;
+  border-radius: 12px;
+  justify-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 18px;
+  grid-gap: 5px;
+  background-color: #eeeeee;
+}
+
+.thanksWrap {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thanksWrap p {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .checkOut {
+    left: 400px;
+  }
+}

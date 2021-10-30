@@ -13,7 +13,7 @@ const Store = () => {
         return new Promise((resolve, reject) => {
           const img = new Image();
           img.src = product.src;
-          img.onload = resolve(img);
+          img.onload = resolve();
           img.onerror = reject();
         });
       });

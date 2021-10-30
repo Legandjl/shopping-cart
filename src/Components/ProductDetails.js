@@ -5,8 +5,7 @@ import "../styles/detailpage.css";
 const ProductDetails = () => {
   const params = useParams();
   const { products, addToCart } = useContext(CartContext);
-  const [total, setTotal] = useState(0);
-  console.log(total);
+  const [total, setTotal] = useState(1);
   const selectedItem = products.find((item) => {
     return item.id === parseInt(params.id);
   });
@@ -23,7 +22,7 @@ const ProductDetails = () => {
               currency: "GBP",
             })}
           </p>
-          <button onClick={() => addToCart(parseInt(params.id))}>
+          <button onClick={() => addToCart(parseInt(params.id), total)}>
             Add to Cart
           </button>
           <div className="amountWrap">
@@ -31,7 +30,7 @@ const ProductDetails = () => {
               className="ri-indeterminate-circle-fill"
               onClick={() => {
                 setTotal((prev) => {
-                  if (prev > 0) {
+                  if (prev > 1) {
                     return prev - 1;
                   }
                   return prev;

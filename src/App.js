@@ -6,6 +6,7 @@ import Store from "./Components/Store";
 import ProductDetails from "./Components/ProductDetails";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
+import ThanksPage from "./Components/ThanksPage";
 
 function App() {
   return (
@@ -25,7 +26,11 @@ function App() {
         </Route>
 
         <Route path="/cart">
-          <p></p>
+          <CartPage />
+        </Route>
+
+        <Route path="/thanks">
+          <ThanksPage />
         </Route>
       </Switch>
       <Footer />
