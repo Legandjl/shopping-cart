@@ -5,6 +5,7 @@ import CartPage from "./Components/CartPage";
 import Store from "./Components/Store";
 import ProductDetails from "./Components/ProductDetails";
 import Footer from "./Components/Footer";
+import Home from "./Components/Home";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/">
-          <p></p>
+          <Home />
         </Route>
 
         <Route exact path="/store">

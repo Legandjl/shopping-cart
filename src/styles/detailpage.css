@@ -18,7 +18,7 @@
 }
 
 .productInfo button {
-  background-color: #202124;
+  background-color: #000000;
   color: white;
   border: none;
   padding: 8px;
@@ -32,12 +32,13 @@
 .productDetail img {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 12px;
-  outline: solid 16px #202124;
+  outline: solid 16px #000000;
 }
 
 .productText {
   display: grid;
   grid-gap: 5px;
+  text-align: center;
 }
 
 .amountWrap {

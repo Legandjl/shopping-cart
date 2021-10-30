@@ -1,0 +1,10 @@
+.homePage {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.homePage img {
+  margin-top: 20px;
+}

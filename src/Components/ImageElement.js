@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Image = (props) => {
+const ImageElement = (props) => {
   return (
     <Link to={`/store/${props.id}`}>
       <img alt="cat" src={props.src} />
@@ -8,4 +8,4 @@ const Image = (props) => {
   );
 };
 
-export default Image;
+export default ImageElement;

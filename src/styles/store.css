@@ -10,7 +10,7 @@
 
 .store img {
   border-radius: 12px;
-  outline: solid 10px #242526;
+  outline: solid 10px #000000;
 }
 
 .store img:hover {

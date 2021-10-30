@@ -27,11 +27,20 @@ const products = () => {
     cat12,
   ];
 
+  const prices = [29.99, 39.99, 49.99];
+
+  let priceIndex = 0;
+
   const products = images.map((img, i) => {
+    if (priceIndex === 3) {
+      priceIndex = 0;
+    }
+    let price = prices[priceIndex];
+    priceIndex++;
     return {
       src: img,
       id: i,
-      price: 39.99,
+      price: price,
     };
   });
 
