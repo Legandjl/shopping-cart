@@ -134,19 +134,27 @@
   }
 
   .cartItem img {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
   }
 
   .checkOut {
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     left: 50vw;
     right: 50vw;
     font-size: 28px;
   }
 
   .cartWrap button {
-    height: 80px;
+    height: auto;
+    font-size: 22px;
+    padding: 20px;
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  .productQuantity p {
+    font-size: 24px;
   }
 }

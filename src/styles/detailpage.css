@@ -82,3 +82,21 @@
     margin-right: 50px;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  .productInfo img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .productInfo button {
+    height: auto;
+    font-size: 22px;
+    padding: 20px;
+    padding-top: 25px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+}
