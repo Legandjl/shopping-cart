@@ -17,6 +17,10 @@ function App() {
           <Home />
         </Route>
 
+        <Route path="/shopping-cart">
+          <Home />
+        </Route>
+
         <Route exact path="/store">
           <Store />
         </Route>
