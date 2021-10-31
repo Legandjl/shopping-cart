@@ -8,7 +8,7 @@ import { CartContextProvider } from "./Components/CartContext";
 ReactDOM.render(
   <React.StrictMode>
     <CartContextProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App />
       </BrowserRouter>
     </CartContextProvider>
