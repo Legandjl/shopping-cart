@@ -1,6 +1,6 @@
 .cartWrap {
   display: grid;
-  grid-template-columns: 1fr minmax(700px, 1fr) 1fr;
+  grid-template-columns: minmax(300px, 30vw) minmax(700px, 1fr) 1fr;
   position: relative;
   background-color: #d1d2d7;
 }
@@ -49,8 +49,10 @@
 }
 
 .cartItem img {
-  width: 200px;
-  height: 200px;
+  width: 15vw;
+  height: 15vh;
+  min-width: 200px;
+  min-height: 200px;
   outline: 10px solid;
   border-radius: 12px;
   margin: 10px;
@@ -95,8 +97,9 @@
   position: fixed;
   top: 30%;
   left: 50%;
-  height: 20vw;
-  width: 20vw;
+  height: 20vmax;
+  width: 25vmax;
+
   min-height: 200px;
   min-width: 200px;
   border: solid 8px;
