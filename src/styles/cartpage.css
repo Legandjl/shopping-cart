@@ -49,10 +49,8 @@
 }
 
 .cartItem img {
-  width: 15vw;
-  height: 15vh;
-  min-width: 200px;
-  min-height: 200px;
+  height: 15em;
+  width: 15em;
   outline: 10px solid;
   border-radius: 12px;
   margin: 10px;
