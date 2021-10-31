@@ -8,13 +8,3 @@
 .homePage img {
   margin-top: 20px;
 }
-
-@media only screen and (min-width: 1600px) {
-  p {
-    font-size: 28px;
-  }
-
-  a {
-    font-size: 28px;
-  }
-}
