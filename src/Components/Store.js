@@ -1,40 +1,22 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/store.css";
 import { CartContext } from "./CartContext";
-import ImageElement from "./ImageElement";
-
+import LazyLoad from "react-lazyload";
 const Store = () => {
   const { products } = useContext(CartContext);
-  const [loadingStatus, setLoading] = useState(true);
 
-  useEffect(() => {
-    const cacheImages = async (products) => {
-      const imagePromises = await products.map((product) => {
-        return new Promise((resolve, reject) => {
-          const img = new Image();
-          img.src = product.src;
-          img.onload = resolve();
-          img.onerror = reject();
-        });
-      });
-      await Promise.all(imagePromises);
-      setLoading(false);
-    };
-    cacheImages(products);
-  }, [products]);
-
-  return (
-    <div className="store">
-      {loadingStatus ? (
-        <div></div>
-      ) : (
-        products.map((product) => {
-          return (
-            <ImageElement src={product.src} key={product.id} id={product.id} />
-          );
-        })
-      )}
-    </div>
-  );
+  const storeItems = products.map((product) => {
+    return (
+      <div key={product.key}>
+        <Link to={`/store/${product.id}`}>
+          <LazyLoad height={200}>
+            <img alt="cat" src={product.src} id={product.id} />
+          </LazyLoad>
+        </Link>
+      </div>
+    );
+  });
+  return <div className="store">{storeItems}</div>;
 };
 export default Store;
