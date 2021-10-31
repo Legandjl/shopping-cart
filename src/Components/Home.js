@@ -9,7 +9,7 @@ const Home = () => {
         Take a look at our store page to find the purrfect artwork for your
         wall!{" "}
       </p>
-      <img src={catBackground} />
+      <img alt={"cat home"} src={catBackground} />
     </div>
   );
 };

@@ -17,11 +17,8 @@ const Store = () => {
           img.onerror = reject();
         });
       });
-      await Promise.all(imagePromises).then(() => {
-        setTimeout(() => {
-          setLoading(false);
-        }, 200);
-      });
+      await Promise.all(imagePromises);
+      setLoading(false);
     };
     cacheImages(products);
   }, [products]);

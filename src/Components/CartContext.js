@@ -4,7 +4,7 @@ import products from "../productData/products";
 const cartContext = React.createContext();
 
 const CartContextProvider = (props) => {
-  const [productData, setProductData] = useState(products);
+  const [productData] = useState(products);
   const [cartItems, setCartItems] = useState([]);
 
   console.log(cartItems);

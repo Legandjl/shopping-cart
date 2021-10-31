@@ -5,7 +5,7 @@ const ThanksPage = () => {
   return (
     <div className="thanksWrap">
       <div>
-        <img src={thanks} />
+        <img alt={"thank you cat "} src={thanks} />
         <p>Thanks for your order!</p>
       </div>
     </div>
