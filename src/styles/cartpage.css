@@ -95,6 +95,7 @@
   position: fixed;
   top: 30vh;
   left: 50vw;
+  bottom: 50vh;
   height: 300px;
   width: 300px;
   border: solid 8px;
@@ -156,5 +157,13 @@
 
   .productQuantity p {
     font-size: 24px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  a {
+    font-size: 28px;
   }
 }
