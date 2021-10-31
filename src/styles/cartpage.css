@@ -36,6 +36,8 @@
   background-color: #eeeeee;
   justify-content: center;
   justify-items: center;
+  align-content: center;
+  padding-top: 10vh;
 }
 
 .cartItem {
