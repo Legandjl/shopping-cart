@@ -128,7 +128,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .cartWrap {
     grid-template-columns: 1fr minmax(900px, 1fr) 1fr;
   }
@@ -143,5 +143,6 @@
     height: 400px;
     left: 50vw;
     right: 50vw;
+    background-color: red;
   }
 }
