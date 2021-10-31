@@ -9,7 +9,6 @@
   background-color: #000000;
   color: white;
   border: none;
-  font-size: 16px;
   transition: all ease-in-out 0.1s;
   font-family: "Luckiest Guy", cursive;
   padding-top: 5px;
@@ -17,7 +16,7 @@
   height: 40px;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 14px;
+  font-size: 1.6rem;
 }
 
 .cartWrap button:hover {
@@ -29,7 +28,6 @@
 .cartPage {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 250px;
   padding: 50px;
   align-items: center;
   border-right: solid 4px;
@@ -37,14 +35,13 @@
   justify-content: center;
   justify-items: center;
   align-content: center;
-  padding-top: 10vh;
+  padding-top: 5em;
 }
 
 .cartItem {
   display: grid;
   grid-template-columns: 1fr;
   grid-column: 1;
-  grid-gap: 10px;
   justify-self: center;
 }
 
@@ -53,7 +50,7 @@
   width: 15em;
   outline: 10px solid;
   border-radius: 12px;
-  margin: 10px;
+  margin: 1.4em;
   justify-self: center;
 }
 
@@ -66,12 +63,10 @@
   justify-self: center;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-gap: 5px;
-  margin-bottom: 20px;
+  margin-top: 0.5em;
 }
 
 .productQuantity p {
-  margin-top: 5px;
 }
 
 .emptyCart {
@@ -93,18 +88,15 @@
   align-content: center;
   align-items: center;
   position: fixed;
-  top: 30%;
-  left: 50%;
-  height: 18em;
-  width: 18em;
-
-  min-height: 200px;
-  min-width: 200px;
+  top: 25%;
+  left: 45%;
+  height: 20em;
+  width: 20em;
   border: solid 8px;
   border-radius: 12px;
   justify-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  font-size: 18px;
+  font-size: 1.8rem;
   grid-gap: 5px;
   background-color: #eeeeee;
 }

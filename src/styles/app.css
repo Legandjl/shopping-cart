@@ -127,10 +127,18 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 62%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
 .App {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 80px 1fr auto;
+  grid-template-rows: 5em 1fr auto;
   font-family: "Luckiest Guy", cursive;
   background-color: #fbfbfd;
 }
