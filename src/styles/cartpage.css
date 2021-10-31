@@ -1,6 +1,6 @@
 .cartWrap {
   display: grid;
-  grid-template-columns: minmax(300px, 30vw) minmax(700px, 1fr) 1fr;
+  grid-template-columns: minmax(300px, 25vmax) minmax(700px, 1fr) 1fr;
   position: relative;
   background-color: #d1d2d7;
 }
