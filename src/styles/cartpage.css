@@ -93,11 +93,12 @@
   align-content: center;
   align-items: center;
   position: fixed;
-  top: 30vh;
-  left: 50vw;
-  bottom: 50vh;
-  height: 300px;
-  width: 300px;
+  top: 30%;
+  left: 50%;
+  height: 20vw;
+  width: 20vw;
+  min-height: 200px;
+  min-width: 200px;
   border: solid 8px;
   border-radius: 12px;
   justify-items: center;
