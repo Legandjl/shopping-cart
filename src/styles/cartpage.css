@@ -95,8 +95,8 @@
   position: fixed;
   top: 30%;
   left: 50%;
-  height: 20vmax;
-  width: 25vmax;
+  height: 16em;
+  width: 16em;
 
   min-height: 200px;
   min-width: 200px;
