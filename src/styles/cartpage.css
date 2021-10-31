@@ -134,15 +134,19 @@
   }
 
   .cartItem img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
 
   .checkOut {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     left: 50vw;
     right: 50vw;
-    background-color: blue;
+    font-size: 28px;
+  }
+
+  .cartWrap button {
+    height: 60px;
   }
 }
