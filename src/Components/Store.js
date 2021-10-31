@@ -18,18 +18,26 @@ const Store = () => {
         });
       });
       await Promise.all(imagePromises).then(() => {
-        setLoading(false);
+        setTimeout(() => {
+          setLoading(false);
+        }, 200);
       });
     };
     cacheImages(products);
   }, [products]);
 
-  const imageElements = products.map((product) => {
-    return <ImageElement src={product.src} key={product.id} id={product.id} />;
-  });
-
   return (
-    <div className="store">{loadingStatus ? <div></div> : imageElements}</div>
+    <div className="store">
+      {loadingStatus ? (
+        <div></div>
+      ) : (
+        products.map((product) => {
+          return (
+            <ImageElement src={product.src} key={product.id} id={product.id} />
+          );
+        })
+      )}
+    </div>
   );
 };
 export default Store;
