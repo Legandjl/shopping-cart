@@ -144,10 +144,9 @@
     left: 50vw;
     right: 50vw;
     font-size: 28px;
-    background-color: #eeeeee;
   }
 
   .cartWrap button {
-    height: 60px;
+    height: 80px;
   }
 }
