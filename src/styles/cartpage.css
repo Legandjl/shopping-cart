@@ -64,9 +64,11 @@
   display: grid;
   grid-template-columns: auto 1fr;
   margin-top: 0.5em;
+  font-size: 1.1em;
 }
 
 .productQuantity p {
+  padding-top: 5px;
 }
 
 .emptyCart {
@@ -74,10 +76,11 @@
   justify-content: center;
   align-content: center;
   grid-gap: 20px;
+  font-size: 1.2em;
 }
 
 .emptyCart img {
-  width: 200px;
+  width: 12em;
   height: auto;
   justify-self: center;
 }
@@ -88,10 +91,11 @@
   align-content: center;
   align-items: center;
   position: fixed;
-  top: 25%;
+  top: 40%;
   left: 45%;
-  height: 20em;
-  width: 20em;
+  height: 25%;
+  width: 25%;
+  min-width: 400px;
   border: solid 8px;
   border-radius: 12px;
   justify-items: center;
@@ -109,12 +113,12 @@
 }
 
 .thanksWrap p {
-  font-size: 24px;
+  font-size: 1.6em;
 }
 
 .thanksWrap img {
-  width: auto;
-  height: 250px;
+  height: auto;
+  width: 20em;
 }
 
 @media only screen and (max-width: 768px) {

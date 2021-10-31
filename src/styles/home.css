@@ -3,8 +3,12 @@
   justify-items: center;
   justify-content: center;
   align-content: center;
+  font-size: 1.2em;
+  white-space: nowrap;
 }
 
 .homePage img {
   margin-top: 20px;
+  width: 20em;
+  height: auto;
 }
