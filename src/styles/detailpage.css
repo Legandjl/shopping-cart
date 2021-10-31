@@ -26,6 +26,7 @@
   padding-top: 5px;
   text-align: center;
   height: 40px;
+  min-width: 120px;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 14px;
@@ -65,4 +66,19 @@
 
 .amountWrap i:hover {
   cursor: pointer;
+}
+
+.detailWrap i:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .detailWrap i {
+    display: none;
+  }
+
+  .productDetail img {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }

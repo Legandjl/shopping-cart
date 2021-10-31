@@ -6,7 +6,7 @@ const ThanksPage = () => {
     <div className="thanksWrap">
       <div>
         <img src={thanks} />
-        <p>Order placed!</p>
+        <p>Thanks for your order!</p>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ const Header = () => {
       <div className="cartIconWrap">
         <Link to="/cart">
           <i className="ri-shopping-cart-line"> </i>
-          {cartItems.length > 9 ? 9 + "+" : cartItems.length}
+          {cartItems.length === 0 ? "" : cartItems.length}
         </Link>
       </div>
     </nav>

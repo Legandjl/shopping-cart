@@ -11,6 +11,7 @@
 .store img {
   border-radius: 12px;
   outline: solid 10px #000000;
+  transition: all ease-in-out 0.09s;
 }
 
 .store img:hover {
