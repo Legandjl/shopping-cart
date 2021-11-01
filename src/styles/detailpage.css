@@ -74,13 +74,15 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 900px) {
-  .detailWrap i {
-    display: none;
+@media only screen and (max-width: 980px) {
+  .productInfo {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5em;
   }
 
   .productDetail img {
     margin-left: 50px;
     margin-right: 50px;
+    width: 15em;
   }
 }

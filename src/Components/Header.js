@@ -6,6 +6,14 @@ import { CartContext } from "./CartContext";
 
 const Header = () => {
   const { cartItems } = useContext(CartContext);
+  const getNumberOfCartItems = () => {
+    let total = 0;
+    cartItems.forEach((element) => {
+      total += element.quantity;
+    });
+    return total;
+  };
+
   return (
     <nav className="header">
       <Link to="/">Home</Link>
@@ -13,7 +21,11 @@ const Header = () => {
       <div className="cartIconWrap">
         <Link to="/cart">
           <i className="ri-shopping-cart-line"> </i>
-          {cartItems.length === 0 ? "" : cartItems.length}
+          {cartItems.length === 0
+            ? ""
+            : getNumberOfCartItems() < 100
+            ? getNumberOfCartItems()
+            : 100 + "+"}
         </Link>
       </div>
     </nav>
