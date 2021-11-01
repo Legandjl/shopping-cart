@@ -7,8 +7,6 @@ const CartContextProvider = (props) => {
   const [productData] = useState(products);
   const [cartItems, setCartItems] = useState([]);
 
-  console.log(cartItems);
-
   const removeFromCart = (id) => {
     const filteredArray = cartItems.filter((item) => {
       return item.id !== id;
@@ -25,29 +23,25 @@ const CartContextProvider = (props) => {
   };
 
   const addToCart = (id, total) => {
-    const productItem = productData.find((item) => {
-      return item.id === id;
-    });
-
     setCartItems((prev) => {
       const alreadyInCart = prev.some((item) => {
         return item.id === id;
       });
+      const toAdd = alreadyInCart
+        ? {
+            ...prev.find((item) => item.id === id),
+            quantity: prev.find((item) => item.id === id).quantity + total,
+          }
+        : { ...productData.find((item) => item.id === id), quantity: total };
 
-      if (alreadyInCart) {
-        const currentCartItem = cartItems.find((item) => {
-          return item.id === id;
-        });
-        total = currentCartItem.quantity += total;
-      }
       return alreadyInCart
         ? [
             ...prev.filter((item) => {
               return item.id !== id;
             }),
-            { ...productItem, quantity: total },
+            toAdd,
           ]
-        : [...prev, { ...productItem, quantity: total }];
+        : [...prev, toAdd];
     });
   };
 
