@@ -86,3 +86,21 @@
     width: 15em;
   }
 }
+
+@media only screen and (min-width: 1400px) {
+  .store {
+    grid-gap: 80px;
+    padding: 100px;
+  }
+  .store img {
+    height: 23em;
+    width: 23em;
+  }
+  .productDetail img {
+    width: 24em;
+  }
+
+  i {
+    scale: 1.4;
+  }
+}

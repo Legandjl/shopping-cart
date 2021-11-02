@@ -34,3 +34,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media only screen and (min-width: 1400px) {
+  .store {
+    grid-gap: 80px;
+    padding: 100px;
+  }
+  .store img {
+    height: 23em;
+    width: 23em;
+  }
+}
