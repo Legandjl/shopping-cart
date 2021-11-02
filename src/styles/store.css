@@ -35,7 +35,7 @@
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1600px) {
   .store {
     grid-gap: 80px;
     padding: 100px;
