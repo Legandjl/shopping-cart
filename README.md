@@ -1,4 +1,12 @@
-# simple shopping website created with react and react router
+# Shopping storefront website created with react and react router
 
-currently not optimised for mobile, and depending on your resolution things may not appear quite right
-I used an m1 macbook air 13 inch, have tested it on a 1080p 13 inch screen too
+Users can add items to their cart.
+
+Users can remove items from their cart.
+
+Users will be presented with a total upon clicking the cart icon.
+
+Users can click the checkout button and be presented with a thank you screen.
+
+Users can browse items from the store tab, or by navigating from a store item page in the style of an image gallery.
+
