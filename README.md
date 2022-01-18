@@ -1,4 +1,4 @@
-# Shopping storefront website created with react and react router
+# Shopping storefront website created with React
 
 Users can add single or multiple items to their cart.
 
