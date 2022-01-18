@@ -10,3 +10,5 @@ Users can click the checkout button and then be navigated to the thank you scree
 
 Users can browse items from the store tab, or by navigating from a store item page in the style of an image gallery.
 
+All photos taken from https://unsplash.com/
+
