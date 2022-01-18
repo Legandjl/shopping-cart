@@ -6,7 +6,7 @@ Users can remove items from their cart.
 
 Users will be presented with a total upon clicking the cart icon.
 
-Users can click the checkout button and be presented with a thank you screen.
+Users can click the checkout button and then be navigated to the thank you screen.
 
 Users can browse items from the store tab, or by navigating from a store item page in the style of an image gallery.
 
