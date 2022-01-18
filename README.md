@@ -1,6 +1,6 @@
 # Shopping storefront website created with react and react router
 
-Users can add items to their cart.
+Users can add single or multiple items to their cart.
 
 Users can remove items from their cart.
 
